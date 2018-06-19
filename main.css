@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+section {
+    padding: 2%;    
+}
+
+section#watches {
+    border-bottom: 1px solid #808080;    
+}
+
+.header {
+    /*    padding: 80px;*/
+    text-align: center;
+    background: #fff;
+    color: white;
+}
+
+.img-responsive-watches {
+    display: -webkit-box;
+    width: 400px;
+    height: auto;
+    margin-left: 60%;
+}
+
+    .header h1 {
+    font-size: 40px;
+}
+
+.navbar-inverse {
+    background:#fff!important;
+    border:none;
+}
+
+.navbar {
+    min-height: 50px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+}
+
+.navbar-brand {
+    padding: 6px 15px;
+}
+
+#nav input[type=text] {
+    float: right;
+    padding: 15px;
+    margin-left: 20px;
+    border: none;
+    border-bottom:1px solid #808080;
+    font-size: 14px;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: black;
+    border-bottom: 1px solid #808080;
+}
+
+.navbar-inverse .navbar-nav>li>a:visited {
+    color: #808080;
+}
+
+a.lm {
+    color: #dc3545;
+    text-decoration: none;
+}
+
+a.lm:hover {
+    margin-left: 20px;
+}
+
+span {
+    width: 30px;
+}
+
+.row {  
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    padding: .5rem 1rem;
+    margin: auto;
+}
+
+.side {
+    -ms-flex: 30%;
+    flex: 30%;
+    background-color: #fff;
+    padding: 20px;
+    padding: 14px 20px;
+}
+
+.foottxt {
+    -ms-flex: 30%;
+    flex: 30%;
+    background-color: transparent;
+    color: #fff;
+    padding: 60px 110px;
+}
+
+.btn {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+}
+
+.footbor {
+    border-left: 3px solid #fff;
+    padding-left: 25px
+
+}
+
+.borlef {
+    border-left: 3px solid #808080;
+    padding-left: 25px
+}
+
+.main {   
+    -ms-flex: 70%;
+    flex: 70%;
+    background-color: white;
+/*    padding-left: 53%;*/
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+    background-color: #fff;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#footer {
+    background-image: url(img/runners.jpg);
+    min-height: 425px;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+    .foottxt {
+       padding: 2px;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
